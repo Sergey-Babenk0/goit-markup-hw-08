@@ -472,11 +472,6 @@ body {
   border: none;
 }
 
-.head {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 .mobile-menu-open {
   background-color: transparent;
   border: none;
@@ -1189,12 +1184,17 @@ body {
   .works {
     display: flex;
     padding-left: 0;
+    min-width: 450px;
     margin: 0%;
     margin-top: 25px;
     list-style: none;
   }
 }
 @media screen and (max-width: 767px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
   .button__margin {
     margin-bottom: 15px;
   }
@@ -1210,28 +1210,36 @@ body {
   .work:last-child {
     margin-bottom: 0;
   }
+  .works > li {
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .buttons__portfolio {
     justify-content: center;
-  }
-  .works > li:nth-child(3n) {
-    margin-right: 0;
   }
 }
 @media screen and (max-width: 1199px) {
   .works {
     flex-wrap: wrap;
   }
-  .works > li {
-    margin-right: 30px;
-    margin-bottom: 30px;
+  .works > li:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works {
+    min-width: 738px;
   }
   .works > li:nth-child(2n) {
     margin-right: 0;
   }
-  .works > li:last-child {
-    margin-bottom: 0;
+  .works > li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .work {
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1324,7 +1332,7 @@ body {
 .work__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
