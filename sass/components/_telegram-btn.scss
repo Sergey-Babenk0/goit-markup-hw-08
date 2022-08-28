@@ -1,0 +1,23 @@
+.telegram-button {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #ffffff;
+  min-width: 200px;
+  height: 50px;
+  background: var(--brand-color-one);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .telegram-button {
+    margin: 0;
+  }
+}

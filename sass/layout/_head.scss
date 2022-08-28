@@ -1,0 +1,32 @@
+.head {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  fill: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .head__contacts {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.head {
+  margin: 0 auto;
+  background-color: var(--light-background-color);
+}
+
+.head--border {
+  border-bottom: 1px solid #ececec;
+}
