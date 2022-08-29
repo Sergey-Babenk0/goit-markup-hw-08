@@ -373,6 +373,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
+  min-width: 480px;
   max-height: 796px;
   z-index: 1000;
   top: 0;
@@ -472,6 +473,13 @@ body {
   border: none;
 }
 
+@media screen and (max-width: 768px) {
+  .head {
+    width: 480px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .mobile-menu-open {
   background-color: transparent;
   border: none;
@@ -500,7 +508,7 @@ body {
 
 @media screen and (min-width: 0) {
   .hero {
-    max-width: 480px;
+    min-width: 480px;
     min-height: 400px;
     margin: 0 auto;
     padding-top: 118px;
@@ -743,6 +751,9 @@ body {
   .empl__name {
     margin-top: 30px;
     margin-bottom: 16px;
+  }
+  .empl__widht {
+    max-width: 100%;
   }
   .empl__worker {
     font-style: normal;
@@ -1192,8 +1203,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .container {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .button__margin {
     margin-bottom: 15px;
@@ -1217,6 +1228,9 @@ body {
 @media screen and (min-width: 768px) {
   .buttons__portfolio {
     justify-content: center;
+  }
+  .works {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1278,6 +1292,7 @@ body {
 .work {
   position: relative;
   border-bottom: 1px solid #eeeeee;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work:hover, .work:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1661,7 +1676,7 @@ body {
   .modal-form-input:active {
     border-color: var(--brand-color-one);
   }
-  .modal-form-input:hover + .modal-form-label-icons, .modal-form-inputt:focus + .modal-form-label-icons {
+  .modal-form-input:hover + .modal-form-label-icons, .modal-form-input:focus + .modal-form-label-icons {
     fill: var(--brand-color-one);
   }
   .modal-form-label-icons {
@@ -1717,6 +1732,7 @@ body {
   }
   .link-form-terms {
     color: var(--brand-color-one);
+    text-decoration: underline;
   }
   .modal-form-checkbox {
     position: absolute;
@@ -1738,6 +1754,15 @@ body {
   }
   .modal-form-title {
     line-height: 1.15;
+  }
+  .modal-form-terms {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
   }
 }
 .backdrop.is-hidden {

@@ -78,7 +78,7 @@
     }
 
     &:hover + .modal-form-label-icons,
-    &t:focus + .modal-form-label-icons {
+    &:focus + .modal-form-label-icons {
       fill: var(--brand-color-one);
     }
   }
@@ -144,6 +144,7 @@
 
   .link-form-terms {
     color: var(--brand-color-one);
+    text-decoration: underline;
   }
 
   .modal-form-checkbox {
@@ -170,6 +171,18 @@
 
   .modal-form-title {
     line-height: 1.15;
+  }
+
+  .modal-form-terms {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
   }
 }
 

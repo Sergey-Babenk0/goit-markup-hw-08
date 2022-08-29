@@ -1,7 +1,10 @@
-// .head {
-//   padding-top: 16px;
-//   padding-bottom: 16px;
-// }
+@media screen and (max-width: 768px) {
+  .head {
+    width: 480px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 .mobile-menu-open {
   background-color: transparent;
