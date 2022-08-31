@@ -612,6 +612,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 480px) {
+  .benefits-title {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits-icon {
     width: 354px;
@@ -748,12 +753,12 @@ body {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
+  .empl__width {
+    max-width: 100%;
+  }
   .empl__name {
     margin-top: 30px;
     margin-bottom: 16px;
-  }
-  .empl__widht {
-    max-width: 100%;
   }
   .empl__worker {
     font-style: normal;
@@ -870,12 +875,16 @@ body {
     margin-right: 0;
   }
   .empl {
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+  .empl__width {
+    max-width: 100%;
   }
   .empl__name {
     margin-top: 30px;
