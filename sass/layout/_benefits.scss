@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    width: 450px;
     height: 120px;
     fill: #212121;
     background: #f5f4fa;
@@ -27,7 +26,6 @@
   }
 
   .benefits-paragraph {
-    width: 450px;
     padding-left: 0;
     font-style: normal;
     font-size: 14px;
@@ -40,11 +38,11 @@
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 480px) {
-  .benefits-title {
-    width: 450px;
-  }
-}
+// @media screen and (max-width: 480px) {
+//   .benefits-title {
+//     width: 450px;
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .benefits-icon {

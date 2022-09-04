@@ -1,6 +1,5 @@
 @media screen and (max-width: 1199px) {
   .team {
-    min-width: 468px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #f5f4fa;
@@ -113,9 +112,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  .empl {
-    min-width: 450px;
-  }
+  // .empl {
+  //   min-width: 450px;
+  // }
   .empl:last-child {
     margin-bottom: 0;
   }
